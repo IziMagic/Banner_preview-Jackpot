@@ -262,6 +262,12 @@ iframe {
 	font-weight: 700;
 }
 
+.banner-button img {
+	display: inline-block;
+	position: absolute;
+	z-index: 799;
+}
+
 .banner-button .btn-animated {
 	animation: ScaleButton 0.6s 5s steps(9, end) forwards;
 	-webkit-animation: ScaleButton 0.6s 5s steps(9, end) forwards;
