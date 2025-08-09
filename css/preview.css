@@ -1,0 +1,21 @@
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+
+.nav {
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+	row-gap: 10px;
+	margin: 20px;
+}
+
+.nav-btn {
+	padding: 10px 20px;
+}
+
+#banner-frame {
+	margin-left: 20px;
+}

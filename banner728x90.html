@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>728x90</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css">
+	<link rel="stylesheet" href="./css/728x90.css">
+</head>
+
+<body>
+	<main>
+		<div class="banner-728-90 banner">
+			<div class="text animated-text">
+				<p id="animated-text-1"></p>
+				<p id="animated-text-2"></p>
+			</div>
+			<img src="./images/star.png" class="star star-1 animated-1" width="10px" alt="star">
+			<img src="./images/star.png" class="star star-2 animated-2" width="10px" alt="star">
+			<img src="./images/star.png" class="star star-3 animated-3" width="15px" alt="star">
+
+			<img src="./images/star.png" class="star star-1" width="10px" alt="star">
+			<img src="./images/star.png" class="star star-2" width="10px" alt="star">
+			<img src="./images/star.png" class="star star-3" width="15px" alt="star">
+
+			<h1 class="heading-one"><span class="big">£15M</span></h1>
+			<h2 class="heading-one"><span class="normal">Jackpot</span><br><span class="small">This
+					Saturday</span></h2>
+			<a class="banner-button">
+				<p id="btn-text"> <span class="big">+15</span> <span class="normal">prizes<br> of £100k</span><br><span
+						class="small">when you play 2 or more lines online</span> </p>
+				<img src="./images/btn-bg-oval.png" alt="btn" class="btn-img" width="141px" height="81">
+				<img src="./images/btn-bg-oval.png" alt="btn " class="btn-animated" width="141px" height="81">
+			</a>
+			<p class="text-rules">Rules & Promo Ts&Cs apply. 18+</p>
+			<img src="./images/logo_200x200.png" alt="btn" class="logo" width="108px">
+		</div>
+	</main>
+	<script src="./js/banner728x90.js" type="module"></script>
+	<script>const containerFirst = document.getElementById("animated-text-1");
+		const containerSecond = document.getElementById("animated-text-2");
+		const btnContainer = document.getElementById("animated-btn-text");
+		function lettersFadeIn(text, container) {
+			[...text].forEach((char, i) => {
+				const span = document.createElement("span");
+				span.textContent = char;
+				span.style.animationDelay = `${i * 0.15}s`;
+				container.appendChild(span);
+			});
+		}
+		lettersFadeIn("must", containerFirst);
+		lettersFadeIn("be won", containerSecond);
+		setTimeout(() => {
+			lettersFadeIn("Play now", btnContainer);
+		}, 2400);</script>
+
+</body>
+
+</html>
