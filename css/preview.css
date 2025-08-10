@@ -14,8 +14,15 @@ ul {
 
 .nav-btn {
 	padding: 10px 20px;
+	background-color: rgb(198, 198, 198);
+	color: rgb(28, 26, 26);
+	border-radius: 5px;
 }
 
 #banner-frame {
 	margin-left: 20px;
+}
+
+.active {
+	background-color: rgb(140, 140, 140);
 }
