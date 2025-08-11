@@ -1,3 +1,13 @@
+html,
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+
 ul {
 	margin: 0;
 	padding: 0;
@@ -25,4 +35,29 @@ ul {
 
 .active {
 	background-color: rgb(140, 140, 140);
+}
+
+iframe {
+	border: none;
+	outline: none;
+	box-shadow: none;
+	overflow: hidden;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+	padding: 0;
+
+}
+
+iframe::-webkit-scrollbar {
+	display: none;
+}
+
+ul {
+	list-style-type: none;
+}
+
+button {
+	outline: none;
+	border: 0;
+	cursor: pointer;
 }
